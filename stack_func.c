@@ -1,4 +1,4 @@
-nclude "monty.h"
+#include "monty.h"
 /**
  * _push - push int to a stack
  * @stack: linked lists for monty stack
@@ -27,7 +27,7 @@ void _push(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
  * @stack: pointer to linked list stack
  * @line_number: number of line opcode occurs on
  */
-void _pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
+void _pall(stack_t **stack, (unsigned int line_number))
 {
 	stack_t *runner;
 
@@ -43,7 +43,7 @@ void _pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
  * @stack: pointer to linked list stack
  * @line_number: number of line opcode occurs on
  */
-void _pint(stack_t **stack, unsigned int line_number)
+void _pint(stack_t **stack, (unsigned int line_number))
 {
 	stack_t *runner;
 

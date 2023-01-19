@@ -12,6 +12,7 @@ void read_file(char *filename, stack_t **stack)
 	instruct_func s;
 	int check;
 	int read;
+	int getline;
 
 	var_global.file = fopen(filename, "r");
 
