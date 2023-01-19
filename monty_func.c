@@ -136,5 +136,3 @@ char *parse_line(char *line, stack_t **stack, unsigned int line_number)
 	}
 	return (op_code);
 }
-
-
