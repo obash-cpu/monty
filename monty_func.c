@@ -15,7 +15,6 @@ extern void read_file(char *filename, stack_t **stack)
 	int read;
 	int getline;
 
-	ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 
 	var_global.file = fopen(filename, "r");
 
