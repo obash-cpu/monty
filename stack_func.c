@@ -1,10 +1,10 @@
-nclude "monty.h"
+#include "monty.h"
 /**
  * _push - push int to a stack
  * @stack: linked lists for monty stack
  * @line_number: number of line opcode occurs on
  */
-void _push(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
+extern void _push(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
 {
 	stack_t *top;
 	(void)line_number;
@@ -27,7 +27,7 @@ void _push(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
  * @stack: pointer to linked list stack
  * @line_number: number of line opcode occurs on
  */
-void _pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
+extern void _pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
 {
 	stack_t *runner;
 
@@ -43,7 +43,7 @@ void _pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
  * @stack: pointer to linked list stack
  * @line_number: number of line opcode occurs on
  */
-void _pint(stack_t **stack, unsigned int line_number)
+extern void _pint(stack_t **stack, unsigned int line_number)
 {
 	stack_t *runner;
 
@@ -61,7 +61,7 @@ void _pint(stack_t **stack, unsigned int line_number)
  * @line_number: integer
  * Return: void
  */
-void _pop(stack_t **stack, unsigned int line_number)
+extern void _pop(stack_t **stack, unsigned int line_number)
 {
 	stack_t *nodo = *stack;
 
@@ -79,7 +79,7 @@ void _pop(stack_t **stack, unsigned int line_number)
  * free_dlistint - free a list
  * @head: pointer to first node
  */
-void free_dlistint(stack_t *head)
+extern void free_dlistint(stack_t *head)
 {
 	stack_t *tmp;
 
@@ -87,6 +87,6 @@ void free_dlistint(stack_t *head)
 	{
 		tmp = head->next;
 		free(head);
-		free(head);
+		head = tmp;
 	}
 }

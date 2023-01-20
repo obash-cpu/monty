@@ -1,10 +1,11 @@
 #include "monty.h"
+#include <stdio.h>
 /**
  * read_file - reads a bytecode file and runs commands
  * @filename: pathname to file
  * @stack: pointer to the top of the stack
  */
-void read_file(char *filename, stack_t **stack)
+extern void read_file(char *filename, stack_t **stack)
 {
 	char *line;
 	size_t i = 0;
@@ -12,6 +13,8 @@ void read_file(char *filename, stack_t **stack)
 	instruct_func s;
 	int check;
 	int read;
+
+	ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 
 	var_global.file = fopen(filename, "r");
 
