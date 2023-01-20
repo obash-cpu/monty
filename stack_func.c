@@ -27,7 +27,11 @@ extern void _push(stack_t **stack, __attribute__ ((unused))unsigned int line_num
  * @stack: pointer to linked list stack
  * @line_number: number of line opcode occurs on
  */
+<<<<<<< HEAD
 extern void _pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
+=======
+void _pall(stack_t **stack, (unsigned int line_number))
+>>>>>>> 30f2c5dc582fdd530e1ec5d96059ae1f29ec3463
 {
 	stack_t *runner;
 
@@ -43,7 +47,11 @@ extern void _pall(stack_t **stack, __attribute__ ((unused))unsigned int line_num
  * @stack: pointer to linked list stack
  * @line_number: number of line opcode occurs on
  */
+<<<<<<< HEAD
 extern void _pint(stack_t **stack, unsigned int line_number)
+=======
+void _pint(stack_t **stack, (unsigned int line_number))
+>>>>>>> 30f2c5dc582fdd530e1ec5d96059ae1f29ec3463
 {
 	stack_t *runner;
 

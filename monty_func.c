@@ -13,6 +13,7 @@ extern void read_file(char *filename, stack_t **stack)
 	instruct_func s;
 	int check;
 	int read;
+	int getline;
 
 	ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 
@@ -139,5 +140,3 @@ char *parse_line(char *line, stack_t **stack, unsigned int line_number)
 	}
 	return (op_code);
 }
-
-
